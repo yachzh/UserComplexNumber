@@ -55,5 +55,7 @@ public class ComplexNumberTestDrive {
       System.out.println("ax / bx = " + hx);
       System.out.println("a + conj_a = " + a.add(a.conj()));
       System.out.println("ax + conj_ax = " + ax.add(ax.conjugate()));
+      ComplexNumber zr=ComplexNumber.polarToRect(1,3.14159/3);
+      System.out.println(zr);
    }
 }

@@ -91,7 +91,7 @@ public class ComplexNumber {
       return result;
    }
 
-   public ComplexNumber polarToRect(double r, double theta) {
+   public static ComplexNumber polarToRect(double r, double theta) {
       double newRe = r * Math.cos(theta);
       double newIm = r * Math.sin(theta);
       ComplexNumber result = new ComplexNumber(newRe, newIm);
