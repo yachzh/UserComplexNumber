@@ -87,11 +87,11 @@ public class ComplexNumber {
       // Using De Moivre's theorem, z**n = r**n * exp(n*theta)
       double r = abs();
       double theta = arg();
-      ComplexNumber result = polarToRect(Math.pow(r, n), n * theta);
+      ComplexNumber result = polar(Math.pow(r, n), n * theta);
       return result;
    }
 
-   public static ComplexNumber polarToRect(double r, double theta) {
+   public static ComplexNumber polar(double r, double theta) {
       double newRe = r * Math.cos(theta);
       double newIm = r * Math.sin(theta);
       ComplexNumber result = new ComplexNumber(newRe, newIm);
